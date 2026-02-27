@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tripadvisor Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- NAVBAR -->
+<nav class="flex items-center justify-between px-6 py-4 border-b">
+  <div class="flex items-center gap-2">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tripadvisor.svg" class="h-8 w-8 text-green-600">
+    <h1 class="text-2xl font-bold">Tripadvisor</h1>
+  </div>
+
+  <ul class="hidden md:flex gap-6 font-medium">
+    <li>Discover</li>
+    <li>Trips</li>
+    <li>Review</li>
+    <li>More</li>
+  </ul>
+
+  <div class="hidden md:flex items-center gap-4">
+    <h2 class="text-bold text-xl"INR></h2>
+    <button class="border px-4 py-2 rounded-full bg-black text-white">Sign in</button>
+  </div>
+
+  <svg class="md:hidden" width="24" height="24" viewBox="0 0 24 24">
+    <rect x="3" y="6" width="18" height="2"></rect>
+    <rect x="3" y="11" width="18" height="2"></rect>
+    <rect x="3" y="16" width="18" height="2"></rect>
+  </svg>
+</nav>
+
+<!-- SEARCH -->
+<section class="flex flex-col items-center mt-10 px-4">
+  <h2 class="text-3xl font-bold mb-6">Where to?</h2>
+
+  <div class="flex items-center border rounded-full px-6 py-4 w-full md:w-2/3 shadow">
+    <input type="text" placeholder="Search destinations, hotels, things to do"
+      class="flex-grow outline-none text-lg"/>
+    <button class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold">
+      Search
+    </button>
+  </div>
+
+  <div class="flex gap-6 mt-6 font-medium text-sm">
+    <p>Hotels</p>
+    <p>Things to Do</p>
+    <p>Restaurants</p>
+    <p>Flights</p>
+    <p>Holiday Homes</p>
+  </div>
+</section>
+
+<!-- Find Things To Do (STRICT FIX – image smaller + text clearly right & bold) -->
+<section class="px-6 mt-10">
+  <div class="bg-green-700 rounded-2xl flex flex-col md:flex-row items-center p-8">
+
+    <!-- LEFT IMAGE : FORCE SMALL SIZE -->
+    <div class="md:w-1/2 flex justify-center">
+      <img
+        src="./images/img_1_files/caption(24).jpg"
+        alt="Things to do"
+        class="rounded-xl w-[580px] h-[580px] object-cover"
+      />
+    </div>
+
+    <!-- RIGHT TEXT : PUSHED RIGHT + VERY BOLD -->
+    <div class="md:w-1/2 flex flex-col justify-center pl-14 text-black">
+      <h1 class="text-6xl font-black leading-tight">
+        Find things to do <br>
+        for everything <br>
+        youre into
+      </h1>
+
+      <p class="mt-4 text-xl font-medium">
+        Browse 400,000+ experiences and book with us.
+      </p>
+
+      <button class="mt-6 bg-black text-white px-8 py-3 rounded-full font-bold w-fit">
+        Book now
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPLORE -->
+<section class="px-6 mt-12">
+  <h2 class="text-2xl font-bold mb-4">Explore top destinations</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div>
+      <img src="./images/img_1_files/caption(10).jpg" class="rounded-xl">
+      <h3 class="mt-2 font-semibold">Paris</h3>
+    </div>
+    <div>
+      <img src="./images/img_1_files/caption(1).jpg" class="rounded-xl">
+      <h3 class="mt-2 font-semibold">Dubai</h3>
+    </div>
+    <div>
+      <img src="./images/img_1_files/caption(11).jpg" class="rounded-xl">
+      <h3 class="mt-2 font-semibold">Singapore</h3>
+    </div>
+    <div>
+      <img src="./images/img_1_files/caption(12).jpg" class="rounded-xl">
+      <h3 class="mt-2 font-semibold">New York</h3>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section class="px-6 mt-12">
+  <h2 class="text-2xl font-bold mb-4">Top experiences on Tripadvisor</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div>
+      <img src="./images/img_1_files/caption(12).jpg" class="rounded-xl">
+      <p class="mt-2 font-medium">Tours & Sightseeing</p>
+    </div>
+    <div>
+      <img src="./images/img_1_files/caption(13).jpg" class="rounded-xl">
+      <p class="mt-2 font-medium">Outdoor Adventures</p>
+    </div>
+    <div>
+      <img src="./images/img_1_files/caption(15).jpg" class="rounded-xl">
+      <p class="mt-2 font-medium">Food & Drink</p>
+    </div>
+    <div>
+      <img src="./images/img_1_files/caption(14).jpg" class="rounded-xl">
+      <p class="mt-2 font-medium">Day Cruises</p>
+    </div>
+  </div>
+</section>
+
+<!-- Travelers’ Choice – Best of the Best (FIXED & CENTERED) -->
+<section class="px-6 mt-6">
+  <div class="bg-[#003b2f] rounded-2xl flex flex-col md:flex-row items-center p-8 gap-6">
+
+    <!-- LEFT CONTENT -->
+    <div class="md:w-2/3 text-white">
+      <img src="./images/img_1_files/2026_Best_of_the_Best_Badge_Large.svg" class="w-[160px] h-[160px]">
+      <h2 class="text-5xl font-extrabold">
+        Travelers Choice
+      </h2>
+      <h2 class="text-5xl font-bold mt-1">
+        Best of the Best
+      </h2>
+      <p class="mt-3 text-base">
+        Among our top 1% of places, stays, eats, and experiences—decided by you.
+      </p>
+
+      <button class="mt-5 bg-white text-black px-6 py-3 rounded-full font-semibold">
+        See the winners
+      </button>
+    </div>
+
+    <!-- RIGHT IMAGE (SIZE CONTROLLED) -->
+    <div class="md:w-1/3 flex justify-center">
+      <img
+        src="./images/img_1_files/caption(33).jpg"
+        alt="Travelers Choice"
+        class="w-[580] h-[580px]"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER (Tripadvisor style) -->
+<footer class="bg-gray-100 mt-20 px-8 py-12 text-sm text-gray-700">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+
+    <!-- About -->
+    <div>
+      <h4 class="font-semibold mb-3">About Tripadvisor</h4>
+      <ul class="space-y-2">
+        <li>About Us</li>
+        <li>Press</li>
+        <li>Resources and Policies</li>
+        <li>Careers</li>
+        <li>Trust & Safety</li>
+        <li>Contact us</li>
+        <li>Tripadvisor Technology Blog</li>
+      </ul>
+    </div>
+
+    <!-- Explore -->
+    <div>
+      <h4 class="font-semibold mb-3">Explore</h4>
+      <ul class="space-y-2">
+        <li>Write a review</li>
+        <li>Add a Place</li>
+        <li>Join</li>
+        <li>Travellers Choice</li>
+        <li>Help Centre</li>
+        <li>Travel Stories</li>
+      </ul>
+    </div>
+
+    <!-- Business -->
+    <div>
+      <h4 class="font-semibold mb-3">Do Business With Us</h4>
+      <ul class="space-y-2">
+        <li>Owners & DMO/CVB</li>
+        <li>Business Advantage</li>
+        <li>Sponsored Placements</li>
+        <li>Advertise with Us</li>
+        <li>Access our Content API</li>
+      </ul>
+
+      <h4 class="font-semibold mt-6 mb-3">Get The App</h4>
+      <ul class="space-y-2">
+        <li>iPhone App</li>
+        <li>Android App</li>
+      </ul>
+    </div>
+
+    <!-- Sites -->
+    <div>
+      <h4 class="font-semibold mb-3">Tripadvisor Sites</h4>
+      <p>Book tours and attraction tickets on Viator</p>
+
+      <div class="flex gap-3 mt-6">
+        <select class="border px-3 py-1 rounded">
+          <option>₹ INR</option>
+        </select>
+        <select class="border px-3 py-1 rounded">
+          <option>India</option>
+        </select>
+      </div>
+
+      <div class="flex gap-4 mt-6 text-lg">
+        <span>ⓕ</span>
+        <span>ⓧ</span>
+        <span>ⓘ</span>
+        <span>▶</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-10 border-t pt-6 text-xs text-gray-500">
+    <p>© 2026 Tripadvisor LLC All rights reserved.</p>
+    <div class="flex flex-wrap gap-4 mt-2">
+      <span>Terms of Use</span>
+      <span>Privacy and Cookies Statement</span>
+      <span>Cookie consent</span>
+      <span>How the site works</span>
+      <span>Accessibility Statement</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
